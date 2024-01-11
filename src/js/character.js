@@ -4,7 +4,7 @@ export default class Character {
       throw new Error("Имя должно содержать от 2 до 10 символов");
     }
     const arr = [
-      "Bowman",
+      "Bowerman",
       "Swordsman",
       "Magician",
       "Demon",

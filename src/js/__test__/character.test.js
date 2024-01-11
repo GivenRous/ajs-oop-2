@@ -13,17 +13,17 @@ test("valid arguments", () => {
 });
 
 test("short name", () => {
-  expect(() => new Character("M")).toThrowError("неверное имя");
+  expect(() => new Character("M")).toThrowError("Имя должно содержать от 2 до 10 символов");
 });
 
 test("long name", () => {
   expect(() => new Character("CharacterCharacter", "Magician")).toThrowError(
-    "неверное имя"
+    "Имя должно содержать от 2 до 10 символов"
   );
 });
 
 test("invalid type", () => {
   expect(() => new Character("Character", "Magicianman")).toThrowError(
-    "неверный тип"
+    "Недопустимый тип персонажа"
   );
 });
